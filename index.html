@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Project</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+  </head>
+  <body>
+    <!-- main section -->
+    <main class="mainDocument">
+      <!-- texts -->
+      <div class="text">
+        <!-- title and intro -->
+        <div class="title intro">
+          <h1>Stay updated!</h1>
+          <br />
+          <p>Join 60,000+ product mangaers receiving monthly updates on:</p>
+        </div>
+
+        <!-- list -->
+        <div class="list">
+          <div>
+            <img
+              src="/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg"
+              alt=""
+            />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div>
+            <img
+              src="/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg"
+              alt=""
+            />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div>
+            <img
+              src="/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg"
+              alt=""
+            />
+            <p>And much more!</p>
+          </div>
+        </div>
+        <!-- Email-box-->
+        <div class="Email-box">
+          <div class="Email-text">
+            <p>Email-box</p>
+            <p class="error-text display">Valid email required</p>
+          </div>
+          <input type="text" placeholder="email@company.com" id="input" />
+        </div>
+        <!-- subscribtion -->
+        <div class="subscription">Subscribe to monthly newsletter</div>
+      </div>
+      <!-- <div class="ImageContainer"> -->
+      <img
+        src="./newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg"
+        alt=""
+        id="mainImage"
+      />
+      <img
+        src="/newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg"
+        alt=""
+        class="mobile_illustration"
+      />
+      <!--  </div> -->
+    </main>
+    <section class="subscribed display">
+      <img
+        src="/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg"
+        alt=""
+      />
+      <br />
+      <h1>Thanks for subscribing!</h1>
+      <br />
+      <p>
+        A confirmation email has been sent to
+        <span id="email">ash@loremcompany.com.</span> Please open it and cl the
+        button inside to confirm your subscription
+      </p>
+      <div>Dismiss message</div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

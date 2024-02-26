@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --REDDISH:rgba(243, 53, 53, 0.993);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Bold.ttf);
+}
+
+body {
+    background: var(--Dark-Slate-Grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+main {
+    /* padding: 10px 15px 10px 15px; */
+    padding: 1.2rem 1rem 1.2rem 3rem;
+    align-items: center;
+    background: var(--White);
+    border-radius: 2rem;
+    display: flex;
+    gap: 4rem;
+    width: 60%;
+    justify-content: flex-end;
+    /* margin: 15vh 20% 10vh 20%;
+    padding: 0px 1% 0px 4%; */
+}
+
+#mainImage {
+   height: 450px;
+}
+.mobile_illustration{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    main {
+       width: 65%;
+       padding: 0.5rem 0.8rem 0.5rem 3rem;
+       border-radius: 1rem;
+    }
+    #mainImage{
+        height: 420px;
+    }
+}
+@media screen and (max-width:768px) {
+    main {
+       width: 70%;
+       padding: 0.5rem 0.5rem 0.5rem 3rem;
+       border-radius: 1rem;
+    }
+    #mainImage{
+        height: 350px;
+    }
+}
+@media screen and (max-width:465px) {
+    body{
+        min-height: auto;
+    }
+    main {
+        gap: 3rem;
+        padding: 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        border-radius: 0px;
+    }
+    #mainImage {
+        display: none;
+     }
+     .mobile_illustration{
+         display: block;
+         width: 100%;
+     }
+}
+/* text */
+.text {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 45ch;
+}
+.text>div {
+    margin-bottom: 1.5rem;
+}
+.list, .Email-box, .intro p {
+    font-family: url(/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Regular.ttf);
+}
+@media screen and (max-width:1024px) {
+    .text>div{
+        margin-bottom: 0.8rem;
+    }
+    main>.text> .subscription{
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .text{
+        max-width: 60%;
+        font-size: 12px;
+        max-height: 100%;
+    }
+    .text>div{
+        margin-bottom: 0.8rem;
+    }
+    main>.text> .subscription{
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+}
+@media screen and (max-width: 465px) {
+    .text {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 80%;
+}
+.text>div{
+    margin-bottom: 1rem;
+}
+main>.text> .subscription{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+}
+/* list */
+.list> div{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Email-box */
+.Email-box input{
+    padding: 10px;
+    width: 100%;
+    
+}
+.Email-box p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.error::placeholder{
+    color: red;
+}
+.error{
+    background-color: rgb(241, 159, 159);
+}
+.Email-text {
+    display: flex;
+    justify-content: space-between;
+} 
+.error-text{
+    color: rgb(238, 5, 5);
+}
+
+
+@media screen and (max-width:768px) {
+    .list>div {
+        gap: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .Email-box input {
+        padding: 5px;
+    }
+}
+@media screen and (max-width:465px) {
+    /* .Email-box input {
+        padding: 8px;
+    } */
+    .list>div {
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .list>div>img{
+        width: 30px;
+        height: 30px;
+    }
+    #input{
+        padding: 1rem;
+    }
+}
+/* subscription */
+.subscription {
+    padding: 15px;
+    color: var(--White);
+    background: var(--Dark-Slate-Grey);
+    text-align: center;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+.subscription:hover {
+    background-color: var(--REDDISH);
+}
+@media screen and (max-width:768px) {
+    .subscription {
+        padding: 0.8rem;
+    }
+}
+/* subscribed section */
+.subscribed {
+    font-family: Roboto;
+    font-size: 1.2rem;
+    width: 35%;
+    background-color: white;
+    padding: 1.3rem 1.3rem 2rem 1.3rem;
+    border-radius: 1.3rem;
+    max-height: 50vh;
+}
+@font-face {
+    font-family: robotol;
+    src: url(/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Regular.ttf);
+}
+.subscribed>p {
+    font-family: robotol;
+}
+.display {
+    display: none;
+}
+.subscribed div {
+    margin-top: 1.3rem;
+    background-color: black;
+    color: var(--White);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.subscribed div:hover {
+    background-color: var(--REDDISH);
+}
+@media screen and (max-width:1024px) {
+    .subscribed {
+        font-size: 1rem;
+        width: 45%;
+    }
+    .subscribed img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:768px){
+    .subscribed {
+        font-size: 0.9rem;
+        padding: 1.3rem 1.3rem 1.3rem 1.3rem;
+    }
+}
+@media screen and (max-width:465px) {
+    .subscription{
+        padding: 1rem;
+    }
+    .subscribed {
+        min-width: 80%;
+        padding: 1rem 1rem 1.5rem 1rem;
+    }
+}
+@media screen and (max-width:320px) {
+    .subscribed {
+        min-width: 80%;
+    }
+    .subscribed>div{
+       margin-top: 0.5rem;
+       padding: 0.6rem;
+    }
+}
